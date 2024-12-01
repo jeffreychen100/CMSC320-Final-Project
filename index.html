@@ -5,39 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMSC320 Final Project</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        a { color: #1a73e8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .toc { margin-bottom: 20px; }
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 20px;
+            line-height: 1.8;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section-divider {
+            margin: 40px 0;
+            border: 0;
+            border-top: 2px dashed #ccc;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+        .main-title-divider {
+            margin: 15px auto;
+            border: 0;
+            border-top: 3px solid #444;
+            width: 80%;
+        }
     </style>
 </head>
 <body>
-    <h1>CMSC320 Final Project</h1>
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Welcome to my final project! This page showcases the analysis and results from the project.</p>
+    <!-- Title Section -->
+    <h1 class="main-title">CMSC320 Final Project</h1>
+    <hr class="main-title-divider">
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <h2 class="section-title">Introduction</h2>
+        <p>Welcome to our CMSC320 Final Project! Below you will find a table of contents describing how we laid out our analysis and visualization of the data.</p>
+        <p>Feel free to explore the sections using the Table of Contents below.</p>
     </section>
-    
-    <section id="toc">
-        <h2>Table of Contents</h2>
-        <ul class="toc">
+
+    <hr class="section-divider">
+
+    <!-- Table of Contents Section -->
+    <section id="table-of-contents" class="section">
+        <h2 class="section-title">Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
             <li><a href="#notebook">Notebook</a></li>
             <li><a href="#conclusion">Conclusion</a></li>
         </ul>
     </section>
-    
-    <section id="notebook">
-        <h2>Notebook</h2>
-        <iframe src="CMSC320_Project_Final_Checkpoint.ipynb" width="100%" height="600px" frameborder="0">
-            Your browser does not support iframe embedding. 
-            <a href="CMSC320_Project_Final_Checkpoint.ipynb">View Notebook</a>
-        </iframe>
+
+    <hr class="section-divider">
+
+    <!-- Notebook Section -->
+    <section id="notebook" class="section">
+        <h2 class="section-title">Notebook</h2>
+        <p>The complete project notebook is presented below as part of this page. You can scroll through it in a static, seamless view.</p>
+        <!-- Paste the content of CMSC320_Project_Final_Checkpoint.html below -->
+        <!-- Begin Notebook Content -->
+        <div>
+            <!-- Replace this placeholder with the actual content of CMSC320_Project_Final_Checkpoint.html -->
+        </div>
+        <!-- End Notebook Content -->
     </section>
-    
-    <section id="conclusion">
-        <h2>Conclusion</h2>
-        <p>Thank you for visiting my project. Feel free to explore the notebook for more insights.</p>
+
+    <hr class="section-divider">
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="section">
+        <h2 class="section-title">Conclusion</h2>
+        <p>Thank you for reviewing my CMSC320 Final Project! The results presented in the notebook demonstrate the key findings and insights gained from the analysis.</p>
+        <p>If you have any questions, feel free to reach out.</p>
     </section>
 </body>
 </html>
