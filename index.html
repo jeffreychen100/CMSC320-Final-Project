@@ -1,76 +1,76 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CMSC320 Final Project</title>
-        <style>
-            body {
-                font-family: Tahoma, sans-serif;
-                line-height: 1.8;
-                color: #333;
-                margin: 0;
-                padding: 0;
-                background-color: #f3f3f3; /* Subtle gray background */
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh; /* Ensure content is vertically centered */
-            }
-            .floating-container {
-                background-color: #ffffff; /* White background for the floating box */
-                padding: 40px;
-                border-radius: 10px; /* Rounded corners */
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Drop shadow for the floating effect */
-                width: 90%; /* Responsive width */
-                max-width: 800px; /* Limit the maximum width */
-            }
-            h1, h2, h3 {
-                color: #444;
-            }
-            a {
-                color: #1a73e8;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-            .section {
-                margin-bottom: 40px;
-                padding-bottom: 20px;
-            }
-            .section-title {
-                font-size: 1.8em;
-                margin-bottom: 10px;
-                border-bottom: 2px solid #ddd;
-                padding-bottom: 5px;
-            }
-            .section-divider {
-                margin: 40px 0;
-                border: 0;
-                border-top: 2px dashed #ccc;
-            }
-            .main-title {
-                text-align: center;
-                font-size: 2.5em;
-                margin-top: 10px;
-            }
-            .main-title-divider {
-                margin: 15px auto;
-                border: 0;
-                border-top: 3px solid #444;
-                width: 80%;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="floating-container">
-        <!-- Title Section -->
-        <h1 class="main-title">Predicting Stroke</h1>
-        <h3 class ="sub-title"; style="text-align: center;">Fall 2024 Data Science Project</h3>
-        <hr class="main-title-divider">
-        <p>Welcome to our CMSC320 Final Project! Below you will find a table of contents describing how we laid out our analysis and visualization of the data.</p>
-        <p>Feel free to explore the sections using the Table of Contents!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSC320 Final Project</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        .floating-container {
+            background-color: #ffffff; 
+            padding: 40px;
+            border-radius: 10px; 
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); 
+            width: 90%; 
+            max-width: 1000px; 
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section-divider {
+            margin: 40px 0;
+            border: 0;
+            border-top: 2px dashed #ccc;
+        }
+        .main-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+        .main-title-divider {
+            margin: 15px auto;
+            border: 0;
+            border-top: 3px solid #444;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+  <div class="floating-container">
+    <!-- Title Section -->
+    <h1 class="main-title">Predicting Stroke</h1>
+    <h3 class ="sub-title"; style="text-align: center;">Fall 2024 Data Science Project</h3>
+    <hr class="main-title-divider">
+    <p>Welcome to our CMSC320 Final Project! Below you will find a table of contents describing how we laid out our analysis and visualization of the data.</p>
+    <p>Feel free to explore the sections using the Table of Contents!</p>
 
         <!-- Table of Contents Section -->
         <section id="table-of-contents" class="section">
@@ -86,35 +86,45 @@
         </ul>
     </section>
 
-    <hr class="section-divider">
-    <section id="collaborators" class="section">
-        <h2 class="section-title">Collaborators and Contributions</h2>
-        <h4>Collaborators:</h4> 
-        <p>Anish Dudeja, Jeffrey Chen, Josh Hart, Keshav Ganapathy, Rachel Cheung, and Wallace Dai</p>
-        <h4>Contributions: </h4>
+  <hr class="section-divider">
+  <section id="collaborators" class="section">
+    <h2 class="section-title">Collaborators and Contributions</h2>
+    <h3>Collaborators:</h3> 
+    <p>Anish Dudeja, Jeffrey Chen, Josh Hart, Keshav Ganapathy, Rachel Cheung, and Wallace Dai</p>
+    <h3>Contributions: </h3>
+    <ul>
+      <li><b>Project Idea:</b> Wallace proposed the idea of predicting stroke occurrences using healthcare data, identifying its relevance in the healthcare industry. They outlined the research questions and goals of the project, emphasizing the need for accurate prediction models to aid in early detection and intervention.  </li>
+      <li><b>Dataset Curation and Preprocessing:</b> Rachel and Keshav curated the healthcare dataset from kaggle and handled initial preprocessing steps, including identifying missing values and imputing them. They replaced missing bmi values with the column mean and addressed unknown values in smoking_status by imputing the mode, ensuring a clean and consistent dataset for analysis. </li>
+      <li><b>Data Exploration and Summary Statistics:</b> Josh, Keshav, and Rachel conducted exploratory data analysis to uncover patterns and relationships within the dataset. They computed summary statistics, created visualizations to understand the distribution of variables, and used statistical tests (such as chi-squared and t-test) to identify features associated with stroke occurrences.</li>
+      <li><b>ML Algorithm Design/Development:</b> Anish and Jeffrey developed the pipeline for the logistic regression model, integrating preprocessing steps like feature scaling and one-hot encoding for categorical variables. Additionally, they implemented SMOTE to address class imbalance and configured the logistic regression model with a balanced class weight to handle the dataset's skewed distribution. </li>
+      <li><b>ML Algorithm Training and Test Data Analysis:</b> Jeffrey, Wallace, and Anish split the dataset into training and testing sets, ensuring stratification to preserve class balance. They trained the logistic regression model, evaluated its performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC, and analyzed the confusion matrix to assess the trade-offs between false positives and false negatives. </li>
+      <li><b>Visualization, Report Analysis, Conclusion:</b> Anish, Josh, and Jeffrey created detailed visualizations, including the ROC curve, confusion matrix heatmap, and feature importance plot, to explain the model's performance and insights. They analyzed the results, highlighting the impact of features like age and hypertension, and discussed the trade-offs between false positives and false negatives in the healthcare context. </li>
+      <li><b>Final Tutorial Creation:</b> Keshav, Wallace, and Josh compiled the final report, integrating contributions from all sections into the final document. They ensured that the report met all formatting and content requirements, added detailed explanations for methods and findings, and edited for clarity and professionalism.</li>
+
+    </ul>
+  </section>
+  <hr class = "section-divider">
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <h2 class="section-title">Introduction</h2>
+        <p>Strokes are a significant health issue worldwide, considered a medical emergency that can cause long-term disability and contribute to high mortality rates. As we know, strokes are common with more than 200,000 cases a year; not only are they common but also life-altering. We chose to do this project with data on strokes in hopes to demonstrate our skills of creating a data science pipeline while analyzing different factors that could help us detect a stroke early on.</p>
+        
+        <h3><strong>Why is this important?</strong></h3>
+        <p>We hope to identify:</p>
+        <ul>
+            <li>What are the key factors that influence the risk of stroke?</li>
+            <li>How accurately can we predict the likelihood of stroke based on the available features?</li>
+            <li>Are there identifiable patterns in demographic, lifestyle, or medical history data that could inform targeted interventions?</li>
+        </ul>
+        
+        <h3><strong>Some other questions we want to answer:</strong></h3>
+        <ul>
+            <li>Which machine learning algorithm performs best for stroke prediction (e.g., logistic regression, decision trees, neural networks)?</li>
+            <li>Are there significant correlations between certain variables?</li>
+            <li>What are the most important features for predicting stroke using machine learning models?</li>
+        </ul>
+        <p>By answering these questions, we can figure out correlations between variables to determine what we need to know for early detection of a stroke. These insights are important for medical professionals and other researchers to help plan effective and timely intervention and preventative measures. With our work, we hope to understand the data science lifecycle, from preprocessing and exploratory data analysis to model building and evaluation.</p>
     </section>
-    <hr class = "section-divider">
-        <!-- Introduction Section -->
-        <section id="introduction" class="section">
-            <h2 class="section-title">Introduction</h2>
-            <p>Strokes are a significant health issue worldwide, considered a medical emergency that can cause long-term disability and contribute to high mortality rates. As we know, strokes are common with more than 200,000 cases a year; not only are they common but also life-altering. We chose to do this project with data on strokes in hopes to demonstrate our skills of creating a data science pipeline while analyzing different factors that could help us detect a stroke early on.</p>
-            
-            <h3><strong>Why is this important?</strong></h3>
-            <p>We hope to identify:</p>
-            <ul>
-                <li>What are the key factors that influence the risk of stroke?</li>
-                <li>How accurately can we predict the likelihood of stroke based on the available features?</li>
-                <li>Are there identifiable patterns in demographic, lifestyle, or medical history data that could inform targeted interventions?</li>
-            </ul>
-            
-            <h3><strong>Some other questions we want to answer:</strong></h3>
-            <ul>
-                <li>Which machine learning algorithm performs best for stroke prediction (e.g., logistic regression, decision trees, neural networks)?</li>
-                <li>Are there significant correlations between certain variables?</li>
-                <li>What are the most important features for predicting stroke using machine learning models?</li>
-            </ul>
-            <p>By answering these questions, we can figure out correlations between variables to determine what we need to know for early detection of a stroke. These insights are important for medical professionals and other researchers to help plan effective and timely intervention and preventative measures. With our work, we hope to understand the data science lifecycle, from preprocessing and exploratory data analysis to model building and evaluation.</p>
-        </section>
 
         <hr class="section-divider">
 
